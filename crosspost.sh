@@ -1,11 +1,11 @@
 #!/bin/bash
 
-CACHE_PATH=~/.config/hugo-crosspost-cache
+CACHE_PATH=~/.cache/hugo-crosspost-cache
 URL="https://add.here.your.URL/sitemap.xml"
 
 
 if [ ! -d ${CACHE_PATH} ] ; then
- echo "mkdir ${CACHE_PATH}"
+ echo "mkdir -p ${CACHE_PATH}"
  mkdir ${CACHE_PATH}
 fi
 
